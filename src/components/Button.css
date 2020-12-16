@@ -1,0 +1,39 @@
+.btn {
+    text-decoration:none;
+    color:#f3f3f3;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 10px;
+    box-sizing:border-box;
+    background-color:aqua;
+    display: inline-block;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:20px;
+    border-radius:2px;
+    box-shadow: 3px 3px #5a5a5a85;
+}
+
+.btn p img {
+    height:100%;
+}
+
+.btn--small{
+    width:50px;
+}
+.btn--large{
+    width:150px;
+}
+
+.btn--primary {
+    background-color:#38415D;
+    transition: all 0.3s ease-in;
+}
+
+.btn--primary:hover{
+    background-color: #4d5674;
+    transform: scale(1.1);
+    box-shadow: 4px 4px 3px #8c8c8c78;
+}

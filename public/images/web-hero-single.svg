@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="510.687" height="369.383" viewBox="0 0 510.687 369.383">
+  <g id="Group_125" data-name="Group 125" transform="translate(-3011.287 438.5) rotate(-14)">
+    <g id="Rectangle_14" data-name="Rectangle 14" transform="translate(3001 411)" fill="#34384a" stroke="#878787" stroke-width="1">
+      <rect width="460" height="266" rx="10" stroke="none"/>
+      <rect x="0.5" y="0.5" width="459" height="265" rx="9.5" fill="none"/>
+    </g>
+    <line id="Line_1" data-name="Line 1" x2="374" transform="translate(3087.5 424.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_2" data-name="Line 2" y2="266" transform="translate(3087.5 411.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <rect id="Rectangle_15" data-name="Rectangle 15" width="290" height="4" rx="2" transform="translate(3090 428)" fill="#727272"/>
+    <rect id="Rectangle_30" data-name="Rectangle 30" width="290" height="4" rx="2" transform="translate(3090 515)" fill="#727272"/>
+    <rect id="Rectangle_37" data-name="Rectangle 37" width="290" height="4" rx="2" transform="translate(3090 599)" fill="#6380e5"/>
+    <rect id="Rectangle_15-2" data-name="Rectangle 15" width="170" height="4" rx="2" transform="translate(3102 438)" fill="#727272"/>
+    <rect id="Rectangle_29" data-name="Rectangle 29" width="170" height="4" rx="2" transform="translate(3102 525)" fill="#6380e5"/>
+    <rect id="Rectangle_36" data-name="Rectangle 36" width="170" height="4" rx="2" transform="translate(3102 609)" fill="#727272"/>
+    <rect id="Rectangle_15-3" data-name="Rectangle 15" width="247" height="4" rx="2" transform="translate(3102 448)" fill="#6380e5"/>
+    <rect id="Rectangle_28" data-name="Rectangle 28" width="247" height="4" rx="2" transform="translate(3102 535)" fill="#6380e5"/>
+    <rect id="Rectangle_35" data-name="Rectangle 35" width="247" height="4" rx="2" transform="translate(3102 619)" fill="#727272"/>
+    <rect id="Rectangle_15-4" data-name="Rectangle 15" width="141" height="4" rx="2" transform="translate(3114 458)" fill="#a5b2e1"/>
+    <rect id="Rectangle_26" data-name="Rectangle 26" width="141" height="4" rx="2" transform="translate(3114 545)" fill="#b9e2b6"/>
+    <rect id="Rectangle_33" data-name="Rectangle 33" width="141" height="4" rx="2" transform="translate(3114 629)" fill="#6380e5"/>
+    <path id="Path_1" data-name="Path 1" d="M2,0H288a2,2,0,0,1,0,4H2A2,2,0,0,1,2,0Z" transform="translate(3114 468)" fill="#727272"/>
+    <path id="Path_2" data-name="Path 2" d="M2,0H288a2,2,0,0,1,0,4H2A2,2,0,0,1,2,0Z" transform="translate(3114 555)" fill="#b9e2b6"/>
+    <path id="Path_3" data-name="Path 3" d="M2,0H288a2,2,0,0,1,0,4H2A2,2,0,0,1,2,0Z" transform="translate(3114 639)" fill="#6380e5"/>
+    <rect id="Rectangle_15-5" data-name="Rectangle 15" width="187" height="4" rx="2" transform="translate(3114 478)" fill="#727272"/>
+    <rect id="Rectangle_24" data-name="Rectangle 24" width="187" height="4" rx="2" transform="translate(3114 565)" fill="#727272"/>
+    <rect id="Rectangle_31" data-name="Rectangle 31" width="187" height="4" rx="2" transform="translate(3114 649)" fill="#727272"/>
+    <rect id="Rectangle_15-6" data-name="Rectangle 15" width="290" height="4" rx="2" transform="translate(3114 488)" fill="#727272"/>
+    <rect id="Rectangle_25" data-name="Rectangle 25" width="290" height="4" rx="2" transform="translate(3114 575)" fill="#727272"/>
+    <rect id="Rectangle_32" data-name="Rectangle 32" width="290" height="4" rx="2" transform="translate(3114 659)" fill="#b9e2b6"/>
+    <rect id="Rectangle_23" data-name="Rectangle 23" width="42" height="4" rx="2" transform="translate(3114 497)" fill="#727272"/>
+    <rect id="Rectangle_15-7" data-name="Rectangle 15" width="31" height="5" rx="2.5" transform="translate(3011 436)" fill="#727272"/>
+    <rect id="Rectangle_15-8" data-name="Rectangle 15" width="54" height="5" rx="2.5" transform="translate(3027 448)" fill="#b9e2b6"/>
+    <rect id="Rectangle_15-9" data-name="Rectangle 15" width="54" height="5" rx="2.5" transform="translate(3027 462)" fill="#727272"/>
+    <rect id="Rectangle_15-10" data-name="Rectangle 15" width="54" height="5" rx="2.5" transform="translate(3027 476)" fill="#727272"/>
+    <rect id="Rectangle_15-11" data-name="Rectangle 15" width="54" height="5" rx="2.5" transform="translate(3027 490)" fill="#b9e2b6"/>
+    <path id="Path_4" data-name="Path 4" d="M1.921,0H51.88A2.269,2.269,0,0,1,53.8,2.5,2.269,2.269,0,0,1,51.88,5H1.921A2.269,2.269,0,0,1,0,2.5,2.269,2.269,0,0,1,1.921,0Z" transform="translate(3027 504)" fill="#b9e2b6"/>
+    <rect id="Rectangle_15-12" data-name="Rectangle 15" width="54" height="5" rx="2.5" transform="translate(3027 518)" fill="#727272"/>
+    <rect id="Rectangle_15-13" data-name="Rectangle 15" width="54" height="5" rx="2.5" transform="translate(3027 532)" fill="#727272"/>
+    <rect id="Rectangle_15-14" data-name="Rectangle 15" width="54" height="5" rx="2.5" transform="translate(3027 546)" fill="#727272"/>
+    <rect id="Rectangle_15-15" data-name="Rectangle 15" width="54" height="5" rx="2.5" transform="translate(3027 560)" fill="#727272"/>
+  </g>
+</svg>
