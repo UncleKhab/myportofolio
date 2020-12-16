@@ -18,21 +18,21 @@ function HeroSection() {
                         </div>
                         <div className="hero-buttons">
                             <Button 
-                                link="http://github.com"
+                                link="http://github.com/UncleKhab"
                                 buttonStyle="btn--primary"
                                 buttonSize= "btn--small"
                             >
                                 <img src={process.env.PUBLIC_URL + '/images/github.svg'} alt="Logo"/>
                             </Button>
                             <Button 
-                                link="http://github.com"
+                                link="https://www.linkedin.com/in/stefan-alexandru-cojocaru-0263bb1b5/"
                                 buttonStyle="btn--primary"
                                 buttonSize= "btn--small"
                             >
                                 <img src={process.env.PUBLIC_URL + '/images/linkedin.svg'} alt="Logo"/>
                             </Button>
                             <Button 
-                                link="http://github.com"
+                                link="https://dribbble.com/UncleKhab"
                                 buttonStyle="btn--primary"
                                 buttonSize= "btn--small"
                             >
