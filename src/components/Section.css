@@ -1,0 +1,16 @@
+.section{
+    max-width:1500px;
+    width:100%;
+    margin:auto;
+    box-sizing:border-box;
+    margin:70px auto 0 auto;
+    padding:0;
+}
+
+.section-title{
+    text-align:center;
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight:bold;
+    color: #fefefe;
+}

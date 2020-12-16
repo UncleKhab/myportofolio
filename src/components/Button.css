@@ -14,6 +14,11 @@
     font-size:20px;
     border-radius:2px;
     box-shadow: 3px 3px #5a5a5a85;
+    transition: all 0.3s ease-in;
+}
+.btn:hover{
+    transform: scale(1.1);
+    box-shadow: 4px 4px 3px #8c8c8c78;
 }
 
 .btn p img {
@@ -28,12 +33,17 @@
 }
 
 .btn--primary {
-    background-color:#38415D;
-    transition: all 0.3s ease-in;
+    background-color:#38415D; 
 }
 
 .btn--primary:hover{
     background-color: #4d5674;
-    transform: scale(1.1);
-    box-shadow: 4px 4px 3px #8c8c8c78;
+    
+}
+
+.btn--secondary{
+    background-color:#6380E5;
+}
+.btn--secondary:hover{
+    background-color:#8599e4;
 }

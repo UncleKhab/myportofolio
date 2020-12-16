@@ -5,7 +5,7 @@ function HeroSectionAnimation() {
     return (
         <div>
             <svg id="illustration-container" width="1412" height="1117" viewBox="0 0 1412 1117" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="web-hero-illustration 1" clip-path="url(#clip0)">
+            <g id="web-hero-illustration 1" clipPath="url(#clip0)">
             <g id="multiple-screens">
             <g id="multiple-screens_2">
             <g id="Group 122">
@@ -338,7 +338,7 @@ function HeroSectionAnimation() {
             </g>
             </g>
             </g>
-            <g id="single-screen" clip-path="url(#clip1)">
+            <g id="single-screen" clipPath="url(#clip1)">
             <g id="Group 125">
             <g id="Rectangle 14_7">
             <path id="Vector_19" d="M708.633 406.419L281.703 512.865C276.344 514.201 273.083 519.628 274.419 524.987L333.932 763.68C335.268 769.038 340.696 772.299 346.054 770.963L772.985 664.518C778.343 663.182 781.604 657.754 780.268 652.396L720.755 413.703C719.419 408.344 713.992 405.083 708.633 406.419Z" fill="#34384A"/>

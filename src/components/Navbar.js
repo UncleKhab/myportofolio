@@ -1,8 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import {useEffect, useState} from 'react'
+import * as Scroll from 'react-scroll'
+import {useState} from 'react'
 import './Navbar.css';
 
+const ScrollLink = Scroll.Link
 function Navbar() {
     const [click, setClick] = useState(false);
 
@@ -15,48 +16,60 @@ function Navbar() {
         <div>
             <nav className="navbar">
                 <div className="navbar-container">
-                    <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>
+                    <a href='/' className="navbar-logo" onClick={closeMobileMenu}>
                         <img src={process.env.PUBLIC_URL + '/images/mobile-logo-top.svg'} alt="Logo"/>
-                    </Link>
+                    </a>
                     <div className="menu-icon" onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
                     </div>
                     <ul className={click ? 'nav-menu active': 'nav-menu'}>
                         <li className="nav-item">
-                            <Link 
-                                to="/"
+                            <ScrollLink 
+                                to="home"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
                                 className="nav-link"
                                 onClick={closeMobileMenu}
                             >
                                 Home
-                            </Link>
+                            </ScrollLink>
                         </li>
                         <li className="nav-item">
-                            <Link 
-                                to="/"
+                            <ScrollLink 
+                                to="projects"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
                                 className="nav-link"
                                 onClick={closeMobileMenu}
                             >
                                 Portofolio
-                            </Link>
+                            </ScrollLink>
                         </li>
                         <li className="nav-item">
-                            <Link 
-                                to="/"
+                            <ScrollLink 
+                                to="about"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
                                 className="nav-link"
                                 onClick={closeMobileMenu}
                             >
                                 About
-                            </Link>
+                            </ScrollLink>
                         </li>
                         <li className="nav-item">
-                            <Link 
-                                to="/"
+                            <ScrollLink 
+                                to="contact"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
                                 className="nav-link"
                                 onClick={closeMobileMenu}
                             >
                                 Contact
-                            </Link>
+                            </ScrollLink>
                         </li>
                     </ul>
                 </div>
