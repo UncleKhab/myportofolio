@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="77.619" height="125.496" viewBox="0 0 77.619 125.496">
+  <g id="Group_150" data-name="Group 150" transform="translate(0.5 0.5)">
+    <path id="Union_1" data-name="Union 1" d="M24.224,92.433c-4.215-.08-4.74-4.509-4.74-4.509a39.3,39.3,0,0,0-.783-9.746c-.955-4.786-4.916-9.983-6.009-11.348A36.508,36.508,0,0,1,0,39.25C0,18.066,18.193,0,38.98,0S76.618,17.172,76.618,38.356A38.587,38.587,0,0,1,64.454,66.592c-.727.816-5.39,6.224-6.184,11.586a73.655,73.655,0,0,0-.862,9.746s.718,4.073-4.884,4.509c-2.047.159-5.811.213-9.971.213C35.324,92.646,26.9,92.484,24.224,92.433Z" fill="#b9e2b6" stroke="#b9e2b6" stroke-width="1"/>
+    <line id="Line_22" data-name="Line 22" y2="31.459" transform="translate(44.191 48.156)" fill="none" stroke="#1f222b" stroke-linecap="round" stroke-width="8"/>
+    <line id="Line_23" data-name="Line 23" y2="31.459" transform="translate(32.092 48.156)" fill="none" stroke="#1f222b" stroke-linecap="round" stroke-width="8"/>
+    <line id="Line_24" data-name="Line 24" x2="18.633" transform="translate(28.462 48.156)" fill="none" stroke="#1f222b" stroke-linecap="round" stroke-width="8"/>
+    <line id="Line_25" data-name="Line 25" x1="7.986" y2="7.744" transform="translate(47.095 40.413)" fill="none" stroke="#1f222b" stroke-linecap="round" stroke-width="8"/>
+    <line id="Line_26" data-name="Line 26" x2="7.986" y2="7.744" transform="translate(20.476 40.413)" fill="none" stroke="#1f222b" stroke-linecap="round" stroke-width="8"/>
+    <path id="Path_24" data-name="Path 24" d="M0,0H26.619" transform="translate(24.59 97.765)" fill="none" stroke="#b9e2b6" stroke-linecap="round" stroke-width="8" opacity="0.8"/>
+    <line id="Line_28" data-name="Line 28" x2="26.619" transform="translate(24.59 105.508)" fill="none" stroke="#b9e2b6" stroke-linecap="round" stroke-width="8" opacity="0.8"/>
+    <line id="Line_29" data-name="Line 29" x2="26.619" transform="translate(25.074 113.252)" fill="none" stroke="#b9e2b6" stroke-linecap="round" stroke-width="8" opacity="0.8"/>
+    <line id="Line_30" data-name="Line 30" x2="11.616" transform="translate(32.576 120.996)" fill="none" stroke="#b9e2b6" stroke-linecap="round" stroke-width="8" opacity="0.8"/>
+  </g>
+</svg>
