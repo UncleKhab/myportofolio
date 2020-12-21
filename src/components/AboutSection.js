@@ -10,7 +10,8 @@ function AboutSection() {
     const responsiveText = "Any website should look and feel amazing no matter what device is used to access it. Each project is developed with responsivness in mind."
     return (
         <div>
-            <Section title="About">
+            <Section title="About"
+                     section_id="about">
                 <div className="about-row">
                     <AboutCard 
                         img="/images/web-dynamic.svg"

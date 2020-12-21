@@ -6,8 +6,8 @@ function Section(props) {
     const {children, title, section_id} = props;
     return (
         <React.Fragment>
-            <Element class="section" id={`${section_id}`} name={section_id}>
-                <h1 class="section-title">{title}</h1>
+            <Element className="section" id={`${section_id}`} name={section_id}>
+                <h1 className="section-title">{title}</h1>
                 {children}
             </Element>
         </React.Fragment>

@@ -52,7 +52,7 @@
 
 .profile-picture{
     margin-top:40px;
-    width: 350px;
+    width: 340px;
     height:300px;
 }
 
@@ -92,5 +92,11 @@
         margin-bottom: 40px;
         width:90%;
         
+    }
+}
+
+@media screen and (max-width: 500px){
+    .profile-picture{
+        width:100%;
     }
 }
