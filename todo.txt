@@ -1,4 +1,8 @@
+Design:
+    -> Remake Logo(inside A transparent)
+
+Development
 -> NavBar blur on scroll
 -> Menu on landscape
 -> Link all projects
-->
+-> Fix the VideoCards Responsive Design

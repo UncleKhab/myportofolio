@@ -34,6 +34,60 @@ function AboutSection() {
                     />
                     
                 </div>
+                <div className="about-wrapper">
+                    <div className="tech-stack">
+                        <h1 className="tech-div-title">Technologies I work with</h1>
+                        <div className="tech-row">
+                            <div className="tech-card">
+                                <h1 className="tech-title">React</h1>
+                                <img src={process.env.PUBLIC_URL + '/images/techstack/web-react.svg'} alt="react-icon"/>
+                            </div>
+                            <div className="tech-card">
+                                <h1 className="tech-title">HTML</h1>
+                                <img src={process.env.PUBLIC_URL + '/images/techstack/web-html.svg'} alt="HTML-icon"/>
+                            </div>
+                            <div className="tech-card">
+                                <h1 className="tech-title">CSS</h1>
+                                <img src={process.env.PUBLIC_URL + '/images/techstack/web-css.svg'} alt="CSS-icon"/>
+                            </div>
+                            <div className="tech-card">
+                                <h1 className="tech-title">Javascript</h1>
+                                <img src={process.env.PUBLIC_URL + '/images/techstack/web-javascript.svg'} alt="Javascript-icon"/>
+                            </div>
+                            <div className="tech-card">
+                                <h1 className="tech-title">Django</h1>
+                                <img src={process.env.PUBLIC_URL + '/images/techstack/web-django.svg'} alt="Django-icon"/>
+                            </div>
+                            <div className="tech-card">
+                                <h1 className="tech-title">Python</h1>
+                                <img src={process.env.PUBLIC_URL + '/images/techstack/web-python.svg'} alt="Python-icon"/>
+                            </div>
+                            <div className="tech-card">
+                                <h1 className="tech-title">Git</h1>
+                                <img src={process.env.PUBLIC_URL + '/images/techstack/web-git.svg'} alt="Git-icon"/>
+                            </div>
+                            <div className="tech-card">
+                                <h1 className="tech-title">Github</h1>
+                                <img src={process.env.PUBLIC_URL + '/images/techstack/web-github.svg'} alt="Github-icon"/>
+                            </div>
+                            <div className="tech-card">
+                                <h1 className="tech-title">Linux/Ubuntu</h1>
+                                <img src={process.env.PUBLIC_URL + '/images/techstack/web-linux.svg'} alt="Linux/Ubuntu-icon"/>
+                            </div>
+                            <div className="tech-card">
+                                <h1 className="tech-title">Adobe XD</h1>
+                                <img src={process.env.PUBLIC_URL + '/images/techstack/web-adobe-xd.svg'} alt="Adobe XD icon"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="my-info">
+                        <img src="https://via.placeholder.com/150" alt="Profile Picture" className="profile-picture"/>
+                        <h2 className="profile-title">A litte bit about myself</h2>
+                        <p className="profile-text">
+                            I'm a Junior Web Developer passionate about designing and developing great projects. I am ambitious and self motivated learner that enjoys to learn something new everyday.
+                        </p>
+                    </div>
+                </div>
             </Section>
         </div>
     )
