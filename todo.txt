@@ -1,0 +1,4 @@
+-> NavBar blur on scroll
+-> Menu on landscape
+-> Link all projects
+->

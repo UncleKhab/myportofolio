@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import ProjectsSection from './components/ProjectsSection';
-
+import AboutSection from './components/AboutSection'
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
       <Navbar />
       <HeroSection/>
       <ProjectsSection/>
+      <AboutSection />
     </>
   );
 }
