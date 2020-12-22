@@ -1,0 +1,147 @@
+.modal-background {
+    position:fixed;
+    top:0;
+    width:100%;
+    height:100vh;
+    z-index:1000;
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    animation-name:slide-in;
+    animation-duration:0.5s;
+}
+.modal-video{
+    background-color:white;
+}
+.modal-wrapper {
+    width:80%;
+    min-height:60%;
+    background-color:#38415d;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    padding:20px;
+    box-sizing:border-box;
+    position:relative;
+    color: #f3f3f3;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.close-btn{
+    position:absolute;
+    right : 20px;
+    top:20px;
+    cursor:pointer;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.modal-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.modal-title , .modal-techstack {
+    text-align:center;
+}
+.modal-title{
+    font-size: 35px;
+    margin:0;
+}
+.modal-techstack{
+    font-size:20px;
+    margin:0;
+    font-style:italic;
+    font-weight:normal;
+    color:#bebebe;
+}
+
+.list{
+    width:70%;
+    padding:0;
+    
+}
+
+.modal-description {
+    list-style-type:none;
+}
+.modal-description li {
+    margin-top: 10px;
+}
+.modal-features{
+    list-style-type:none;;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    font-weight:bold;
+    color:#b9e2b6;
+}
+.modal-features li{
+    width:50%;
+    margin-bottom:5px;
+}
+
+.modal-buttons{
+    display:flex;
+    width:80%;
+    justify-content:space-around;
+}
+.modal-buttons a{
+    flex:1;
+    margin:4px;
+}
+
+@keyframes slide-in {
+    from{
+        opacity:0;
+        left: -100%;
+    }
+    to{
+        opacity:1;
+        left:0;
+    }
+}
+
+@media screen and (max-width:1400px){
+    .modal-wrapper{
+        width:100%;
+    }
+}
+@media screen and (max-width: 1280px){
+    .modal-background{
+        left:0;
+    }
+    .modal-wrapper{
+        display:flex;
+        flex-direction:column;
+        height:100vh;
+        padding-top:60px;
+        padding-bottom:60px;
+    }
+    .modal-content{
+        flex:1;
+    }
+    .modal-title{
+        font-size:30px;
+    }
+    .modal-techstack{
+        font-size:16px;
+    }
+    .list{
+        width:100%;
+    }
+    .modal-description{
+        font-size:16px;
+    }
+    .modal-features{
+        font-size:14px;
+    }
+    .modal-content a{
+        font-size:16px;
+        height:40px;
+    }
+    .modal-video{
+        flex:2;
+    }
+}

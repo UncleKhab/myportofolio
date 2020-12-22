@@ -1,24 +1,32 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Button } from './Button'
+import {InfoModal} from './InfoModal'
 import './VideoCard.css'
 
 function VideoCard(props) {
-    const {img_src, title, github} = props
+    const {content} = props;
+    const {img_src, title, github} = content;
+    const [showModal, setShowModal] = useState(false)
+    
+
+    function handleInfo() {
+        setShowModal(prev => !prev)
+        document.body.style.overflow = showModal ? "" : "hidden";
+        }
     return (
+        <>
         <div className="card">
-            <div className="card-wrapper">
-                <img className="card-img" src={process.env.PUBLIC_URL + `${img_src}`} alt="WalkIn"/>
+            <div className="card-wrapper" onClick={handleInfo}>
+                <img className="card-img" src={process.env.PUBLIC_URL + `${img_src}`} alt="WalkIn" />
                 <p className="card-title">{title}</p>
             </div>
             <div className="buttons">
-                    <Button 
-                        link="/"
-                        buttonStyle="btn--secondary"
-                        buttonSize= "btn--small"
-                        target="_blank"
+                    <button 
+                        className="btn btn--small btn--secondary"
+                        onClick={handleInfo}
                     >
                         <img src={process.env.PUBLIC_URL + '/images/web-info.svg'} alt="Logo"/>
-                    </Button>
+                    </button>
                     <Button 
                         link={github}
                         buttonStyle="btn--secondary"
@@ -37,6 +45,10 @@ function VideoCard(props) {
                     </Button>
                 </div>
         </div>
+        <InfoModal showModal={showModal} setShowModal={setShowModal} content={content}>
+                    
+        </InfoModal>
+        </>
     )
 }
 

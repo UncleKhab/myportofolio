@@ -17,7 +17,7 @@ function Navbar() {
             <nav className="navbar">
                 <div className="navbar-container">
                     <a href='/' className="navbar-logo" onClick={closeMobileMenu}>
-                        <img src={process.env.PUBLIC_URL + '/images/mobile-logo-top.svg'} alt="Logo"/>
+                        <img src={process.env.PUBLIC_URL + '/images/logo.svg'} alt="Logo"/>
                     </a>
                     <div className="menu-icon" onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>

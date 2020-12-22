@@ -15,10 +15,14 @@
     border-radius:2px;
     box-shadow: 3px 3px #5a5a5a85;
     transition: all 0.3s ease-in;
+    border:none;
 }
 .btn:hover{
     transform: scale(1.1);
     box-shadow: 4px 4px 3px #8c8c8c78;
+}
+.btn:focus{
+    outline:none;
 }
 
 .btn p img {

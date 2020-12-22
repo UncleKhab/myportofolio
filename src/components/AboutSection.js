@@ -14,7 +14,7 @@ function AboutSection() {
                      section_id="about">
                 <div className="about-row">
                     <AboutCard 
-                        img="/images/web-dynamic.svg"
+                        img="/images/dynamic-icon.svg"
                         title="Dynamic"
                         text={dynamicText}
                     />
@@ -29,7 +29,7 @@ function AboutSection() {
                         text={intuitiveText}
                     />
                     <AboutCard 
-                        img="/images/web-responsive.svg"
+                        img="/images/responsive-icon.svg"
                         title="Responsive"
                         text={responsiveText}
                     />
