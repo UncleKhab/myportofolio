@@ -26,6 +26,10 @@
     opacity:0;
 }
 
+.card-title p{
+    padding:0;
+    margin:0;
+}
 .card-title{
     position:absolute;
     font-size:30px;
@@ -37,10 +41,15 @@
     right:50%;
     opacity:1;
     transition: all 0.4s ease;
+    width:100%;
+    text-align:center;
+}
+.card-tech{
+    font-size:20px;
 }
 .card-img{
     height:95%;
-    filter:blur(2px) contrast(0.4);
+    filter:blur(2px) contrast(0.2);
     transition: all 0.4s ease;
 }
 
@@ -52,8 +61,6 @@
 }
 
 
-
-
 @media screen and (max-width: 960px){
     .card{
         margin:10px auto;
@@ -63,5 +70,18 @@
 @media screen and (max-width: 500px){
     .card{
         width:100%;
+    }
+    .card-title{
+        width:100%;
+        text-align:center;
+    }
+    .card-title p{
+        padding:0;
+        margin:0;
+    }
+    .card-tech{
+        font-size:15px;
+        font-style: italic;
+        color: #f3f3f3;
     }
 }

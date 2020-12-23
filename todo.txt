@@ -1,11 +1,15 @@
 Design:
-    -> Remake Logo(inside A transparent)
-    -> Remake Icons on about
+    X Remake Logo(inside A transparent) 
+    X Remake Icons on about
+    
 
 Development
     -> NavBar blur on scroll
         -> Map Navbar to sections
+    -> Bottom Nav
     -> Menu on landscape
-    -> Link all projects
-    -> Fix the VideoCards Responsive Design
+    X Fix the VideoCards Responsive Design
     -> Form validation
+
+Copy :
+    -> Link projects

@@ -5,7 +5,7 @@ import './VideoCard.css'
 
 function VideoCard(props) {
     const {content} = props;
-    const {img_src, title, github} = content;
+    const {img_src, title, github, techStack, preview} = content;
     const [showModal, setShowModal] = useState(false)
     
 
@@ -18,7 +18,10 @@ function VideoCard(props) {
         <div className="card">
             <div className="card-wrapper" onClick={handleInfo}>
                 <img className="card-img" src={process.env.PUBLIC_URL + `${img_src}`} alt="WalkIn" />
-                <p className="card-title">{title}</p>
+                <div className="card-title">
+                    <p>{title}</p>
+                    <p className="card-tech">{techStack}</p>
+                </div>
             </div>
             <div className="buttons">
                     <button 
@@ -36,7 +39,7 @@ function VideoCard(props) {
                         <img src={process.env.PUBLIC_URL + '/images/github.svg'} alt="Logo"/>
                     </Button>
                     <Button 
-                        link="/"
+                        link={preview}
                         buttonStyle="btn--secondary"
                         buttonSize= "btn--large"
                         target="_blank"

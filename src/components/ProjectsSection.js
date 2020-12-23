@@ -7,13 +7,15 @@ const content = {
     title: "SignUp- Form",
     techStack: "React/Django/HTML/CSS/Javascript",
     github:"https://github.com/UncleKhab/Daily-UI/tree/main/Day%201%20-%20SignUp%20Form",
+    preview: '/',
+    video_link: 'https://www.youtube.com/watch?v=rVSqF1fTV70',
     img_src:'/images/placeholder.png',
     descriptionList: [
         "SignUp form is a single page web-application that allows the users to register or sign-up to a web-service of their choice",
         "Using JS and Django the users are stored inside a custom database",
         "Using JS and Django the users are stored inside a custom database"
     ],
-    featuresList:[
+    featuresList: [
         "Create User",
         "Register User",
         "Sign-in as User",
@@ -22,7 +24,7 @@ const content = {
         "Send Messages",
         "Verify User",
         "Receive Messages",
-    ]
+    ], 
 }
 
 function ProjectsSection() {

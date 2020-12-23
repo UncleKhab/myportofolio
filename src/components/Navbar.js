@@ -1,22 +1,52 @@
 import React from 'react'
 import * as Scroll from 'react-scroll'
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import './Navbar.css';
 
 const ScrollLink = Scroll.Link
 function Navbar() {
     const [click, setClick] = useState(false);
-
     const handleClick = () => setClick(!click);
+    const [scrolled, setScrolled] = useState(false)
     const closeMobileMenu = () => setClick(false);
 
+    function debounce(func, wait = 10, immediate = true) {
+        let timeout;
+        return function() {
+          let context = this, args = arguments;
+          let later = function() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+          };
+          let callNow = immediate && !timeout;
+          clearTimeout(timeout);
+          timeout = setTimeout(later, wait);
+          if (callNow) func.apply(context, args);
+        };
+    }
+    function checkScroll() {
+        let scrollPosition = window.scrollY
+        if(scrollPosition > 100 && !scrolled){
+            setScrolled(true)
+        }
+        if(scrollPosition < 100 && scrolled){
+            setScrolled(false)
+        }
+    }
+    useEffect(()=> {
+        console.log(scrolled)
+    },[scrolled])
+    let navBarClasses = scrolled ? "navbar navbar-scrolled" : "navbar"
+    let navLinkClasses = scrolled ? "nav-link nav-link-scrolled" : "nav-link"
+    let navLogoClasses = scrolled ? "navbar-logo navbar-logo-scrolled": "navbar-logo"
+    let navContainerClasses = scrolled ? "navbar-container navbar-container-scrolled" : "navbar-container"
     
-
+    window.addEventListener('scroll', debounce(checkScroll));
     return (
         <div>
-            <nav className="navbar">
-                <div className="navbar-container">
-                    <a href='/' className="navbar-logo" onClick={closeMobileMenu}>
+            <nav className={navBarClasses}>
+                <div className={navContainerClasses}>
+                    <a href='/' className={navLogoClasses} onClick={closeMobileMenu}>
                         <img src={process.env.PUBLIC_URL + '/images/logo.svg'} alt="Logo"/>
                     </a>
                     <div className="menu-icon" onClick={handleClick}>
@@ -29,7 +59,7 @@ function Navbar() {
                                 spy={true}
                                 smooth={true}
                                 duration={500}
-                                className="nav-link"
+                                className={navLinkClasses}
                                 onClick={closeMobileMenu}
                             >
                                 Home
@@ -41,7 +71,7 @@ function Navbar() {
                                 spy={true}
                                 smooth={true}
                                 duration={500}
-                                className="nav-link"
+                                className={navLinkClasses}
                                 onClick={closeMobileMenu}
                             >
                                 Portofolio
@@ -53,7 +83,7 @@ function Navbar() {
                                 spy={true}
                                 smooth={true}
                                 duration={500}
-                                className="nav-link"
+                                className={navLinkClasses}
                                 onClick={closeMobileMenu}
                             >
                                 About
@@ -65,7 +95,7 @@ function Navbar() {
                                 spy={true}
                                 smooth={true}
                                 duration={500}
-                                className="nav-link"
+                                className={navLinkClasses}
                                 onClick={closeMobileMenu}
                             >
                                 Contact

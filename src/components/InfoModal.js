@@ -6,7 +6,7 @@ import ResponsivePlayer from './ResponsivePlayer';
 
 export const InfoModal = ({showModal, setShowModal, content}) =>{
     const modalRef = useRef()
-    const {title, techStack, descriptionList, featuresList, github} = content;
+    const {title, techStack, descriptionList, featuresList, github, video_link, preview} = content;
     let key=0;
     const closeModal = e => {
         if(modalRef.current === e.target){
@@ -42,7 +42,7 @@ export const InfoModal = ({showModal, setShowModal, content}) =>{
                             <p>X</p>
                         </div>
                         <div className="modal-video">
-                            <ResponsivePlayer url="https://www.youtube.com/watch?v=rVSqF1fTV70" />
+                            <ResponsivePlayer url={video_link} />
                         </div>
                         <div className="modal-content">
                             <h1 className="modal-title">{title}</h1>
@@ -55,7 +55,7 @@ export const InfoModal = ({showModal, setShowModal, content}) =>{
                             </ul>
                             <div className="modal-buttons">
                                 <Button 
-                                    link={github}
+                                    link={preview}
                                     buttonStyle="btn--secondary"
                                     buttonSize= "btn--large"
                                     target="_blank"
@@ -70,7 +70,7 @@ export const InfoModal = ({showModal, setShowModal, content}) =>{
                                 >
                                     View Code
                                 </Button>
-                                <a className="btn btn--large mobile-back" onClick={closeHandler}> Back</a>
+                                <button className="btn btn--large mobile-back" onClick={closeHandler}> Back</button>
                             </div>
                         </div>
                     </div>
