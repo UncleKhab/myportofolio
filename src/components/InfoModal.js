@@ -1,6 +1,7 @@
 import React, {useRef, useEffect, useCallback } from 'react';
 import './InfoModal.css'
 import {Button} from "./Button"
+import ResponsivePlayer from './ResponsivePlayer';
 
 
 export const InfoModal = ({showModal, setShowModal, content}) =>{
@@ -30,7 +31,7 @@ export const InfoModal = ({showModal, setShowModal, content}) =>{
         }
     }, [keyPress])
 
-
+    
     return(
         <>
             {showModal 
@@ -38,10 +39,10 @@ export const InfoModal = ({showModal, setShowModal, content}) =>{
                 <div className="modal-background" ref={modalRef} onClick={closeModal}>
                     <div className="modal-wrapper">
                         <div className="close-btn" onClick={closeHandler}>
-                            X
+                            <p>X</p>
                         </div>
                         <div className="modal-video">
-                            <video src=""></video>
+                            <ResponsivePlayer url="https://www.youtube.com/watch?v=rVSqF1fTV70" />
                         </div>
                         <div className="modal-content">
                             <h1 className="modal-title">{title}</h1>
@@ -69,6 +70,7 @@ export const InfoModal = ({showModal, setShowModal, content}) =>{
                                 >
                                     View Code
                                 </Button>
+                                <a className="btn btn--large mobile-back" onClick={closeHandler}> Back</a>
                             </div>
                         </div>
                     </div>

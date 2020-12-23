@@ -35,7 +35,14 @@
     font-size:24px;
     font-weight:bold;
 }
-
+.close-btn p{
+    margin:0;
+    padding:0;
+    line-height: 1;
+}
+.mobile-back{
+    display:none;
+}
 .modal-content{
     display:flex;
     flex-direction:column;
@@ -111,13 +118,15 @@
 @media screen and (max-width: 1280px){
     .modal-background{
         left:0;
+        overflow:scroll;
     }
     .modal-wrapper{
         display:flex;
         flex-direction:column;
-        height:100vh;
-        padding-top:60px;
-        padding-bottom:60px;
+        padding:0 20px;
+        height:fit-content;
+        padding-bottom:30px;
+        position:relative;
     }
     .modal-content{
         flex:1;
@@ -141,7 +150,35 @@
         font-size:16px;
         height:40px;
     }
-    .modal-video{
-        flex:2;
+   
+    .close-btn{
+        position:relative;
+        top:0;
+        left:0;
+        display:block;
+        margin: 20px 0;
     }
+    .modal-buttons{
+        width:100%;
+        flex-direction:column;
+    }
+    .modal-buttons a{
+        width:100%;
+        padding:10px;
+    }
+    .modal-video{
+        margin-top:30px;
+    }
+    .close-btn{
+        display:none;
+    }
+    .mobile-back{
+        display:flex;
+        background-color:brown;
+        cursor:pointer;
+    }
+    .mobile-back:hover{
+        background-color:rgb(202, 46, 46);
+    }
+    
 }

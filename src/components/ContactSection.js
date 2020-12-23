@@ -1,5 +1,5 @@
 import React from 'react'
-import emailjs, { sendForm } from 'emailjs-com'
+import emailjs from 'emailjs-com'
 import Section from './Section'
 import './ContactSection.css'
 function ContactSection() {

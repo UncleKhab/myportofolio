@@ -82,7 +82,7 @@ function AboutSection() {
                         </div>
                     </div>
                     <div className="my-info">
-                        <img src="https://via.placeholder.com/150" alt="Profile Picture" className="profile-picture"/>
+                        <img src="https://via.placeholder.com/150" alt="Profile" className="profile-picture"/>
                         <h2 className="profile-title">A litte bit about myself</h2>
                         <p className="profile-text">
                             I'm a Junior Web Developer passionate about designing and developing great projects. I am ambitious and self motivated learner that enjoys to learn something new everyday.
