@@ -47,7 +47,7 @@ function HeroSection() {
                                     <img src={process.env.PUBLIC_URL + '/images/dribbble.svg'} alt="Logo"/>
                                 </Button>
                                 <Button 
-                                    link="http://github.com"
+                                    link="https://docs.google.com/document/d/1Jvcz2qEdstocQIbQKYDRI8QuskH-6V0_58VCs6OgY24/edit?usp=sharing"
                                     buttonStyle="btn--primary"
                                     buttonSize= "btn--large"
                                     target="_blank"

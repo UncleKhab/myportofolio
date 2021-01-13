@@ -6,7 +6,7 @@ import './AboutSection.css'
 function AboutSection() {
     const dynamicText = "Websites don't have to be static. I create dynamic websites that create a unique and plesant experience for the user."
     const fastText = "I value time and tend to express this in the projects I make. Fast Loading speed is one of my top priorities."
-    const intuitiveText = "Ease of use is what keeps the users coming back to your service. I prioritize accessibility and navigation to create a simpole and effective user flow."
+    const intuitiveText = "Ease of use is what keeps the users coming back to your service. I prioritize accessibility and navigation to create a simple and effective user flow."
     const responsiveText = "Any website should look and feel amazing no matter what device is used to access it. Each project is developed with responsivness in mind."
     return (
         <div>
@@ -85,7 +85,7 @@ function AboutSection() {
                         <img src="https://via.placeholder.com/150" alt="Profile" className="profile-picture"/>
                         <h2 className="profile-title">A litte bit about myself</h2>
                         <p className="profile-text">
-                            I'm a Junior Web Developer passionate about designing and developing great projects. I am ambitious and self motivated learner that enjoys to learn something new everyday.
+                            I'm a Junior Web Developer passionate about designing and developing great projects. I am ambitious and motivated to become a great developer.
                         </p>
                     </div>
                 </div>

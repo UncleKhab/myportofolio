@@ -1,0 +1,27 @@
+#footer{
+    height:100%;
+}
+.footer{
+    background-color:#38415D;
+    width:100%; 
+    max-width:100%;
+    margin: 70px 0 0 0;
+    height:200px;
+}
+
+.footer-wrapper {
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    height:100%;
+}
+
+.footer-logo{
+    height:50%;
+}
+
+@media screen and (max-width: 960px){
+    .footer-logo{
+        display:none;
+    }
+}

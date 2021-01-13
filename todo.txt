@@ -1,15 +1,21 @@
 Design:
     X Remake Logo(inside A transparent) 
     X Remake Icons on about
+    -> Footer
     
 
 Development
-    -> NavBar blur on scroll
-        -> Map Navbar to sections
     -> Bottom Nav
     -> Menu on landscape
-    X Fix the VideoCards Responsive Design
     -> Form validation
+    
+    
+    X NavBar blur on scroll
+        X Map Navbar to sections
+    X Fix the VideoCards Responsive Design
 
 Copy :
     -> Link projects
+    -> Take Project Photos
+    -> Make Project Videos 
+    -> Write Projects Copy
