@@ -1,6 +1,6 @@
 import React from 'react'
 import * as Scroll from 'react-scroll'
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 import './Navbar.css';
 
 const ScrollLink = Scroll.Link
@@ -33,9 +33,7 @@ function Navbar() {
             setScrolled(false)
         }
     }
-    useEffect(()=> {
-        console.log(scrolled)
-    },[scrolled])
+
     let navBarClasses = scrolled ? "navbar navbar-scrolled" : "navbar"
     let navLinkClasses = scrolled ? "nav-link nav-link-scrolled" : "nav-link"
     let navLogoClasses = scrolled ? "navbar-logo navbar-logo-scrolled": "navbar-logo"

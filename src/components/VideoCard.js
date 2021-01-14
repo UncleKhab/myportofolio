@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { Button } from './Button'
 import {InfoModal} from './InfoModal'
 import './VideoCard.css'
@@ -7,6 +7,10 @@ function VideoCard(props) {
     const {content} = props;
     const {img_src, title, github, techStack, preview} = content;
     const [showModal, setShowModal] = useState(false)
+    const [showPreview, setShowPreview] = useState(false);
+    useEffect(() => {
+        preview !== "/" ? setShowPreview(true) : setShowPreview(false);
+    }, [preview])
     
 
     function handleInfo() {
@@ -38,14 +42,15 @@ function VideoCard(props) {
                     >
                         <img src={process.env.PUBLIC_URL + '/images/github.svg'} alt="Logo"/>
                     </Button>
-                    <Button 
+                    {showPreview ? <Button 
                         link={preview}
                         buttonStyle="btn--secondary"
                         buttonSize= "btn--large"
                         target="_blank"
                     >
                         Preview
-                    </Button>
+                    </Button>:
+                    null}
                 </div>
         </div>
         <InfoModal showModal={showModal} setShowModal={setShowModal} content={content}>

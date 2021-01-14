@@ -1,4 +1,4 @@
-import React, {useRef, useEffect, useCallback } from 'react';
+import React, {useRef, useEffect, useCallback, useState } from 'react';
 import './InfoModal.css'
 import {Button} from "./Button"
 import ResponsivePlayer from './ResponsivePlayer';
@@ -6,6 +6,7 @@ import ResponsivePlayer from './ResponsivePlayer';
 
 export const InfoModal = ({showModal, setShowModal, content}) =>{
     const modalRef = useRef()
+    const [showPrev, setShowPrev] = useState(false)
     const {title, techStack, descriptionList, featuresList, github, video_link, preview} = content;
     let key=0;
     const closeModal = e => {
@@ -20,15 +21,19 @@ export const InfoModal = ({showModal, setShowModal, content}) =>{
             document.body.style.overflow = showModal ? "" : "hidden";
         }
     }, [setShowModal, showModal])
+    
     function closeHandler() {
         setShowModal(false);
         document.body.style.overflow = showModal ? "" : "hidden";
     }
+
     useEffect(() => {
+        preview === '/' ? setShowPrev(false) : setShowPrev(true);
         document.addEventListener('keydown', keyPress)
         return () => {
             document.removeEventListener('keydown', keyPress)
         }
+        
     }, [keyPress])
 
     
@@ -54,14 +59,16 @@ export const InfoModal = ({showModal, setShowModal, content}) =>{
                                 {featuresList.map(item => {key++;return <li key={key}>{item}</li>})}
                             </ul>
                             <div className="modal-buttons">
-                                <Button 
-                                    link={preview}
-                                    buttonStyle="btn--secondary"
-                                    buttonSize= "btn--large"
-                                    target="_blank"
+                                {showPrev ? 
+                                 <Button 
+                                 link={preview}
+                                 buttonStyle="btn--secondary"
+                                 buttonSize= "btn--large"
+                                 target="_blank"
                                 >
-                                    Live Preview
-                                </Button>
+                                 Live Preview
+                                </Button>:
+                                null}
                                 <Button 
                                     link={github}
                                     buttonStyle="btn--secondary"

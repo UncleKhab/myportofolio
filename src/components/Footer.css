@@ -6,22 +6,37 @@
     width:100%; 
     max-width:100%;
     margin: 70px 0 0 0;
-    height:200px;
+    height:150px;
 }
 
 .footer-wrapper {
+
+    height:100%;
+}
+.footer-socials{
     display:flex;
     align-items:center;
     justify-content: space-between;
-    height:100%;
+    padding:20px 0;
 }
-
 .footer-logo{
-    height:50%;
+    height:80%;
+}
+.footer-buttons .btn {
+    box-shadow:none;
+}
+.copy > p {
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-family: 'Open Sans';
 }
 
 @media screen and (max-width: 960px){
     .footer-logo{
         display:none;
+    }
+    .footer-socials{
+        justify-content: center;
     }
 }
