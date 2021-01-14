@@ -67,8 +67,8 @@ export const InfoModal = ({showModal, setShowModal, content}) =>{
                                  target="_blank"
                                 >
                                  Live Preview
-                                </Button>:
-                                null}
+                             </Button>:
+                             null}
                                 <Button 
                                     link={github}
                                     buttonStyle="btn--secondary"
@@ -77,8 +77,9 @@ export const InfoModal = ({showModal, setShowModal, content}) =>{
                                 >
                                     View Code
                                 </Button>
-                                <button className="btn btn--large mobile-back" onClick={closeHandler}> Back</button>
+                                
                             </div>
+                            <button className="btn btn--large mobile-back" onClick={closeHandler}> Back</button>
                         </div>
                     </div>
                 </div>) 

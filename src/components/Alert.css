@@ -1,0 +1,46 @@
+.alert-wrapper{
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    z-index: 2000;
+    color: #f3f3f3;
+    font-size: 30px;
+    font-weight:bold;
+    text-align: center;
+    transform: translate(-50%,50%);
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+    animation-name: fadein;
+    animation-duration:0.5s;
+    animation-timing-function: ease-in;
+}
+
+.alert-box {
+    padding: 10px 20px;
+    border-radius:20px;
+
+}
+.alert-box p {
+    margin:0;
+    letter-spacing: 1.2px;
+}
+
+.alert-green{
+    background-color:#009a00e3;
+}
+.alert-red{
+    background-color:#be2828b4;
+}
+@media screen and (max-width:960px){
+    .alert-wrapper{
+        width:100%;
+    }
+}
+@keyframes fadein{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}

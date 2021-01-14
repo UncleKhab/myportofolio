@@ -15,7 +15,7 @@ const projects = {
         descriptionList: [
             "Implemented a design I made in adobe XD using React/CSS and Email.js service.",
             "This project's purpose is to have a personalized website for my other projects.",
-            "I plan to continue the development and implement a Blog Section using a Django REST api."
+            "I plan to continue the development and implement a Blog Section using a Django REST api with mySQL database to store the articles."
         ],
         featuresList: [
             "Showcase Projects",
@@ -145,8 +145,6 @@ function ProjectsSection() {
                 <VideoCard
                     content={projects.catmail}
                 />
-            </div>
-            <div className="cards-row">
                 <VideoCard
                     content={projects.enchanter}
                 />

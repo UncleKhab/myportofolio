@@ -1,19 +1,33 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import emailjs from 'emailjs-com'
 import Section from './Section'
+import {USER_KEY, TEMPLATE, SERVICE} from "./Sett.js"
 import './ContactSection.css'
+import Alert from './Alert'
 function ContactSection() {
+    const [showAlert, setShowAlert] = useState(false)
+    const [alertMessage, setAlertMessage] = useState("Message Sent Succesfully!")
+    const [alertStyle, setAlertStyle] = useState("alert-green")
     function sendForm(e){
         e.preventDefault()
-
-        emailjs.sendForm('service_sqh8n2v', 'template_yvfvjrz', e.target, 'user_EhQa4PM513sLtK6WLSukf')
+        let content = e.target.content.value;
+        if(content.length < 10){
+            setShowAlert(true);
+            setAlertMessage("Your message needs to be at least 10 characters long")
+            setAlertStyle("alert-red")
+        }
+        else{
+            emailjs.sendForm(SERVICE, TEMPLATE, e.target, USER_KEY)
             .then((result) => {
-                console.log(result.text);
+                setShowAlert(true)
+                setAlertMessage("Message Sent Succesfully!");
+                setAlertStyle("alert-green");
             }, (error) => {
                 console.log(error.text);
-            });
-        e.target.reset()
-        console.log("sent");
+            })
+            e.target.reset() 
+        }
+        
     }
     return (
         <Section title="Contact Me"
@@ -39,6 +53,7 @@ function ContactSection() {
                 </div>
                 <button className="send-btn btn btn--secondary btn--large"type="submit">Send</button>
             </form>
+            {showAlert ? <Alert style={alertStyle} message={alertMessage} setShowAlert={setShowAlert} /> : null}
         </Section>
     )
 }

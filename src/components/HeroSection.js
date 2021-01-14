@@ -20,6 +20,9 @@ function HeroSection() {
                                 <h1 id="hero-name">Stefan Cojocaru</h1>
                                 <label htmlFor="hero-title">And I'm a</label>
                                 <h1 id="hero-title">Web Developer</h1>
+                                <h1 id="hero-description">
+                                    Design and Develop from your dreams into the real world.
+                                </h1>
                             </div>
                             <div className="hero-buttons">
                                 <Button 

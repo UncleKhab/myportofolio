@@ -60,7 +60,11 @@
     bottom: 5%;
 }
 
-
+@media screen and (max-width: 1480px){
+    .card{
+        width:400px;
+    }
+}
 @media screen and (max-width: 960px){
     .card{
         margin:10px auto;
