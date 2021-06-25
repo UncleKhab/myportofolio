@@ -13,6 +13,7 @@
 }
 .modal-video{
     background-color:white;
+    height: fit-content;
 }
 .modal-wrapper {
     width:80%;

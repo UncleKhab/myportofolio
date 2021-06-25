@@ -10,7 +10,7 @@ const projects = {
         techStack: "React/Email.js",
         github:"https://github.com/UncleKhab/myportofolio",
         preview: 'http://stefancojocaru.com',
-        video_link: 'https://www.youtube.com/watch?v=rVSqF1fTV70',
+        video_link: 'https://youtu.be/9rbo8cmceHU',
         img_src:'/images/personalwebsite.png',
         descriptionList: [
             "Implemented a design I made in adobe XD using React/CSS and Email.js service.",
@@ -70,7 +70,7 @@ const projects = {
         techStack: "Javascript/Django",
         github:"https://github.com/UncleKhab/enChanter",
         preview: '/',
-        video_link: 'https://www.youtube.com/watch?v=rVSqF1fTV70&t=2s&ab_channel=UncleKhab',
+        video_link: 'https://youtu.be/h2yX2Uxg9Ds',
         img_src:'/images/enchanter.png',
         descriptionList: [
             "A twitter-like app where users can post and follow eachother.",
@@ -109,12 +109,12 @@ const projects = {
     heedpoint : {
         title: "HeedPoint - Coming Soon!",
         techStack: "React/Django REST/Scss",
-        github:"https://github.com/UncleKhab/cs50commerce",
+        github:"https://github.com/UncleKhab/heedpointone",
         preview: '/',
         video_link: 'https://www.youtube.com/watch?v=yqWX86uT5jM&ab_channel=MRTPC',
         img_src:'/images/comingsoon.png',
         descriptionList: [
-            "A Project Managing app still in development.",
+            "A Project Management app still in development.",
             "This App will be made using Django REST framework with a React Frontend.",
             "Users will be able to create projects, set deadline and add other people to help them complete the tasks."
         ],
@@ -137,16 +137,16 @@ function ProjectsSection() {
         >
             <div className="cards-row">
                 <VideoCard
-                    content={projects.personalwebsite}
+                    content={projects.enchanter}
                 />
                 <VideoCard
-                    content={projects.dequest}
+                    content={projects.personalwebsite}
                 />
                 <VideoCard
                     content={projects.catmail}
                 />
                 <VideoCard
-                    content={projects.enchanter}
+                    content={projects.dequest}
                 />
                 <VideoCard
                     content={projects.commerce}
